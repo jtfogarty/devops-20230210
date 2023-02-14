@@ -1,0 +1,477 @@
+{
+  "Foundation": {
+     "live": [
+        {
+           "name": "usb-azure-foundation"
+        },
+        {
+           "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/live/usb-azure-foundation"
+        },
+        {
+           "document_url": ""
+        }
+     ],
+     "module": [
+        {
+           "name": "module-azure-foundation",
+           "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-azure-foundation",
+           "document_url": ""
+        }
+     ],
+     "Subscription": {
+        "module": [
+           {
+              "name": "module-subscription",
+              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-subscription",
+              "document_url": ""
+           }
+        ]
+     },
+     "Service_Principle": {
+        "module": [
+           {
+              "name": "module-service-princinpal",
+              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-service-princinpal",
+              "document_url": ""
+           }
+        ]
+     }
+  },
+  "Landing_Zone": {
+     "module": [
+        {
+           "name": "usb-azure-landing-zone",
+           "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/live/usb-azure-landing-zone",
+           "document_url": ""
+        }
+     ],
+     "Storage_Account": {
+        "tf_state_for_Application_Context_in_Landing_Zone": {
+           "module": [
+              {
+                 "name": "usb-azure-landing-zone",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-account",
+                 "document_url": "",
+                 "notes": "no containers are created during this storage account creation"
+              }
+           ]
+        }
+     },
+     "Network_Setup": {
+        "module": [
+           {
+              "name": "module_Network_Setup",
+              "git_url": "",
+              "document_url": ""
+           }
+        ]
+     },
+     "Private_Endpoint": {
+        "module": [
+           {
+              "name": "module-private-endpoints",
+              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-private-endpoints",
+              "document_url": ""
+           }
+        ]
+     },
+     "Vnet": {
+        "primary": {
+           "module": [
+              {
+                 "name": "module-virtual-network",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
+                 "document_url": ""
+              }
+           ]
+        },
+        "secondary": {
+           "module": [
+              {
+                 "name": "module-virtual-network",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
+                 "document_url": ""
+              }
+           ]
+        }
+     },
+     "Subnet": {
+        "Private_links": {
+           "primary": {
+              "module": [
+                 {
+                    "name": "module-subnet",
+                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet",
+                    "document_url": ""
+                 }
+              ]
+           },
+           "secondary": {
+              "module": [
+                 {
+                    "name": "module-subnet",
+                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet",
+                    "document_url": ""
+                 }
+              ]
+           }
+        },
+        "Key_Vault": {
+           "primary": {
+              "module": [
+                 {
+                    "name": "module-key-vault",
+                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
+                    "document_url": ""
+                 }
+              ]
+           },
+           "secondary": {
+              "module": [
+                 {
+                    "name": "module-key-vault",
+                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
+                    "document_url": ""
+                 }
+              ]
+           }
+        },
+        "NSG": {
+           "Rules": {
+              "module": [
+                 {
+                    "name": "module-network-security-group",
+                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-network-security-group",
+                    "document_url": ""
+                 }
+              ]
+           }
+        },
+        "Subnet_Route_table_Association": {
+           "module": [
+              {
+                 "name": "module-subnet-route-table-association",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet-route-table-association",
+                 "document_url": ""
+              }
+           ]
+        }
+     },
+     "Resource_Group": {
+        "Storage": {
+           "module": [
+              {
+                 "name": "module-resource-group",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-resource-group",
+                 "document_url": ""
+              }
+           ]
+        },
+        "Vnet": {
+           "primary": {
+              "module": [
+                 {
+                    "name": "module-virtual-network",
+                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
+                    "document_url": ""
+                 }
+              ]
+           },
+           "secondary": {
+              "module": [
+                 {
+                    "name": "module-virtual-network",
+                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
+                    "document_url": ""
+                 }
+              ]
+           }
+        },
+        "Key_Vault": {
+           "module": [
+              {
+                 "name": "module-key-vault",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
+                 "document_url": ""
+              }
+           ]
+        },
+        "Backup_Resource_Group": {
+           "module": [
+              {
+                 "name": "module-resource-group",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-resource-group",
+                 "document_url": ""
+              }
+           ]
+        }
+     },
+     "Key_Vault": {
+        "Private_Endpoint": {
+           "module": [
+              {
+                 "name": "module-key-vault",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
+                 "document_url": ""
+              }
+           ]
+        },
+        "CMEK": {
+           "module": [
+              {
+                 "name": "module-keyvault-keysecret",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-keyvault-keysecret",
+                 "document_url": ""
+              }
+           ]
+        }
+     },
+     "Route_Table": {
+        "primary": {
+           "module": [
+              {
+                 "name": "module-route-table",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-route-table",
+                 "document_url": ""
+              }
+           ]
+        },
+        "secondary": {
+           "module": [
+              {
+                 "name": "module-route-table",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-route-table",
+                 "document_url": ""
+              }
+           ]
+        }
+     },
+     "VHub_Route_Table_Route": {
+        "module": [
+           {
+              "name": "module-vhub-route-table-route",
+              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-vhub-route-table-route",
+              "document_url": ""
+           }
+        ]
+     },
+     "Vnet_RBAC": {
+        "Hub_Service_Principle_access_to_Spoke_Vnet": {
+           "module": [
+              {
+                 "name": "",
+                 "git_url": "",
+                 "document_url": ""
+              }
+           ]
+        }
+     },
+     "Recovery_Services_Vault": {
+        "module": [
+           {
+              "name": "",
+              "git_url": "",
+              "document_url": ""
+           }
+        ]
+     }
+  },
+  "Application_Context": {
+     "module": [
+        {
+           "name": "module-application-context",
+           "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-application-context",
+           "document_url": ""
+        }
+     ],
+     "Private_Endpoint": {
+        "not_exposed": {}
+     },
+     "Subnet": {
+        "Route_table_Subnet_Association": {
+           "module": [
+              {
+                 "name": "module-subnet-route-table-association",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet-route-table-association",
+                 "document_url": ""
+              }
+           ]
+        },
+        "NSG": {
+           "module": [
+              {
+                 "name": "module-network-security-group",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-network-security-group",
+                 "document_url": ""
+              }
+           ],
+           "Rules": {
+              "module": [
+                 {
+                    "name": "module-network-security-rule",
+                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-network-security-rule",
+                    "document_url": ""
+                 }
+              ]
+           }
+        }
+     },
+     "Resource_Group": {
+        "module": [
+           {
+              "name": "module-resource-group",
+              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-resource-group",
+              "document_url": ""
+           }
+        ]
+     },
+     "User_Assigned_Managed_Identity": {
+        "module": [
+           {
+              "name": "module-managed-identity",
+              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-managed-identity",
+              "document_url": ""
+           }
+        ]
+     },
+     "Storage_Account": {
+        "Private_Endpoint": {
+           "module": [
+              {
+                 "name": "module-private-endpoints",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-private-endpoints",
+                 "document_url": ""
+              }
+           ]
+        },
+        "Application_SA": {
+           "module": [
+              {
+                 "name": "module-storage-account",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-account",
+                 "document_url": ""
+              }
+           ],
+           "Container": {
+              "module": [
+                 {
+                    "name": "module-storage-container",
+                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-container",
+                    "document_url": ""
+                 }
+              ]
+           }
+        }
+     },
+     "Key_Vault": {
+        "Private_Endpoint": {
+           "module": [
+              {
+                 "name": "module-private-endpoints",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-private-endpoints",
+                 "document_url": ""
+              }
+           ]
+        },
+        "CMEK": {
+           "module": [
+              {
+                 "name": "module-keyvault-keysecret",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-keyvault-keysecret",
+                 "document_url": ""
+              }
+           ]
+        }
+     },
+     "Storage_Containers": {
+        "TF_Container_only": {
+           "module": [
+              {
+                 "name": "module-storage-container",
+                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-container",
+                 "document_url": ""
+              }
+           ]
+        },
+        "add_container_to_SA,_FuncApp,_App": {
+           "module": [
+              {
+                 "name": "",
+                 "git_url": "",
+                 "document_url": ""
+              }
+           ]
+        }
+     }
+  },
+  "D-Conf": {
+     "Function_Apps": {
+        "module": [
+           {
+              "name": "module-function-app-linux",
+              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/computing/tf_modules/module-function-app-linux",
+              "document_url": ""
+           },
+           {
+              "name": "module-function-app-windows",
+              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/computing/tf_modules/module-function-app-windows",
+              "document_url": ""
+           }
+        ]
+     },
+     "Automation_Accounts": {
+        "module": [
+           {
+              "name": "module-automation-account",
+              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/computing/tf_modules/module-automation-account",
+              "document_url": ""
+           }
+        ]
+     },
+     "Databases": {
+        "module": [
+           {
+              "name": "",
+              "git_url": "",
+              "document_url": ""
+           }
+        ]
+     },
+     "Storage_Containers": {
+        "module": [
+           {
+              "name": "",
+              "git_url": "",
+              "document_url": ""
+           }
+        ]
+     },
+     "Private_Endpoint": {
+        "module": [
+           {
+              "name": "",
+              "git_url": "",
+              "document_url": ""
+           }
+        ]
+     },
+     "Vnet_Peering": {
+        "module": [
+           {
+              "name": "",
+              "git_url": "",
+              "document_url": ""
+           }
+        ]
+     },
+     "Virtual_Machines": {
+        "module": [
+           {
+              "name": "",
+              "git_url": "",
+              "document_url": ""
+           }
+        ]
+     }
+  }
+}
