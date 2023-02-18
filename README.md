@@ -1,16 +1,25 @@
-# README
+# Shield Explorer
 
 ## About
 
-This is the official Wails Svelte template.
+The Shield Explorer has the following features; 
+ - Browse all of the modules and READMEs
+ - Generates Application Context YAML
+ - Subnet API requests
+ - Ensures Application Context and Shield Metadata are sync'd
 
-## Live Development
 
-To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
-server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
-and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
-to this in your browser, and you can call your Go code from devtools.
+Run `wails dev` 
+To access your Go methods, use http://localhost:34115. 
+Connect and call your Go code from devtools.<p/>
+You can run `wails dev --host 10.10.51.1:5173` to expose
 
-## Building
+Run `wails build` to create a distribution
 
-To build a redistributable, production mode package, use `wails build`.
+## ToDo's
+
+<input type="checkbox"> Create a form or modal to allow user to add gitlab secret. This data should be stored in a svelte:store <p/>
+<input type="checkbox"> Use gitlab secret to connect to gitlab.com and read a readme onto main area.<p/>
+<input type="checkbox"> When user clicks on a module, display code in main area code block.
+
+<input type="checkbox" checked> some checked text  
