@@ -2,27 +2,23 @@
   "Foundation": {
      "live": [
         {
-           "name": "usb-azure-foundation"
-        },
-        {
-           "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/live/usb-azure-foundation"
-        },
-        {
-           "document_url": ""
+           "name": "usb-azure-foundation",
+           "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/live/usb-azure-foundation",
+           "document_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/live/usb-azure-foundation/README.md"
         }
      ],
      "module": [
         {
            "name": "module-azure-foundation",
-           "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-azure-foundation",
-           "document_url": ""
+           "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/management/tf_modules/module-azure-foundation",
+           "document_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/management/tf_modules/module-azure-foundation/README.md"
         }
      ],
      "Subscription": {
         "module": [
            {
               "name": "module-subscription",
-              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-subscription",
+              "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/management/tf_modules/module-subscription",
               "document_url": ""
            }
         ]
@@ -31,7 +27,7 @@
         "module": [
            {
               "name": "module-service-princinpal",
-              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-service-princinpal",
+              "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/security/tf_modules/module-service-princinpal",
               "document_url": ""
            }
         ]
@@ -41,7 +37,7 @@
      "module": [
         {
            "name": "usb-azure-landing-zone",
-           "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/live/usb-azure-landing-zone",
+           "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/live/usb-azure-landing-zone",
            "document_url": ""
         }
      ],
@@ -50,7 +46,7 @@
            "module": [
               {
                  "name": "usb-azure-landing-zone",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-account",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-account",
                  "document_url": "",
                  "notes": "no containers are created during this storage account creation"
               }
@@ -70,7 +66,7 @@
         "module": [
            {
               "name": "module-private-endpoints",
-              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-private-endpoints",
+              "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-private-endpoints",
               "document_url": ""
            }
         ]
@@ -80,7 +76,7 @@
            "module": [
               {
                  "name": "module-virtual-network",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
                  "document_url": ""
               }
            ]
@@ -89,7 +85,7 @@
            "module": [
               {
                  "name": "module-virtual-network",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
                  "document_url": ""
               }
            ]
@@ -101,7 +97,7 @@
               "module": [
                  {
                     "name": "module-subnet",
-                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet",
+                    "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet",
                     "document_url": ""
                  }
               ]
@@ -110,7 +106,7 @@
               "module": [
                  {
                     "name": "module-subnet",
-                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet",
+                    "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet",
                     "document_url": ""
                  }
               ]
@@ -121,7 +117,7 @@
               "module": [
                  {
                     "name": "module-key-vault",
-                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
+                    "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
                     "document_url": ""
                  }
               ]
@@ -130,7 +126,7 @@
               "module": [
                  {
                     "name": "module-key-vault",
-                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
+                    "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
                     "document_url": ""
                  }
               ]
@@ -141,7 +137,7 @@
               "module": [
                  {
                     "name": "module-network-security-group",
-                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-network-security-group",
+                    "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-network-security-group",
                     "document_url": ""
                  }
               ]
@@ -151,7 +147,7 @@
            "module": [
               {
                  "name": "module-subnet-route-table-association",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet-route-table-association",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet-route-table-association",
                  "document_url": ""
               }
            ]
@@ -162,7 +158,7 @@
            "module": [
               {
                  "name": "module-resource-group",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-resource-group",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/management/tf_modules/module-resource-group",
                  "document_url": ""
               }
            ]
@@ -172,7 +168,7 @@
               "module": [
                  {
                     "name": "module-virtual-network",
-                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
+                    "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
                     "document_url": ""
                  }
               ]
@@ -181,7 +177,7 @@
               "module": [
                  {
                     "name": "module-virtual-network",
-                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
+                    "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-virtual-network",
                     "document_url": ""
                  }
               ]
@@ -191,7 +187,7 @@
            "module": [
               {
                  "name": "module-key-vault",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
                  "document_url": ""
               }
            ]
@@ -200,7 +196,7 @@
            "module": [
               {
                  "name": "module-resource-group",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-resource-group",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/management/tf_modules/module-resource-group",
                  "document_url": ""
               }
            ]
@@ -211,7 +207,7 @@
            "module": [
               {
                  "name": "module-key-vault",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/security/tf_modules/module-key-vault",
                  "document_url": ""
               }
            ]
@@ -220,7 +216,7 @@
            "module": [
               {
                  "name": "module-keyvault-keysecret",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-keyvault-keysecret",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/security/tf_modules/module-keyvault-keysecret",
                  "document_url": ""
               }
            ]
@@ -231,7 +227,7 @@
            "module": [
               {
                  "name": "module-route-table",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-route-table",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-route-table",
                  "document_url": ""
               }
            ]
@@ -240,7 +236,7 @@
            "module": [
               {
                  "name": "module-route-table",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-route-table",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-route-table",
                  "document_url": ""
               }
            ]
@@ -250,7 +246,7 @@
         "module": [
            {
               "name": "module-vhub-route-table-route",
-              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-vhub-route-table-route",
+              "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-vhub-route-table-route",
               "document_url": ""
            }
         ]
@@ -280,7 +276,7 @@
      "module": [
         {
            "name": "module-application-context",
-           "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-application-context",
+           "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/management/tf_modules/module-application-context",
            "document_url": ""
         }
      ],
@@ -292,7 +288,7 @@
            "module": [
               {
                  "name": "module-subnet-route-table-association",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet-route-table-association",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-subnet-route-table-association",
                  "document_url": ""
               }
            ]
@@ -301,7 +297,7 @@
            "module": [
               {
                  "name": "module-network-security-group",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-network-security-group",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-network-security-group",
                  "document_url": ""
               }
            ],
@@ -309,7 +305,7 @@
               "module": [
                  {
                     "name": "module-network-security-rule",
-                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-network-security-rule",
+                    "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-network-security-rule",
                     "document_url": ""
                  }
               ]
@@ -320,7 +316,7 @@
         "module": [
            {
               "name": "module-resource-group",
-              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/management/tf_modules/module-resource-group",
+              "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/management/tf_modules/module-resource-group",
               "document_url": ""
            }
         ]
@@ -329,7 +325,7 @@
         "module": [
            {
               "name": "module-managed-identity",
-              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-managed-identity",
+              "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/security/tf_modules/module-managed-identity",
               "document_url": ""
            }
         ]
@@ -339,7 +335,7 @@
            "module": [
               {
                  "name": "module-private-endpoints",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-private-endpoints",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-private-endpoints",
                  "document_url": ""
               }
            ]
@@ -348,7 +344,7 @@
            "module": [
               {
                  "name": "module-storage-account",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-account",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-account",
                  "document_url": ""
               }
            ],
@@ -356,7 +352,7 @@
               "module": [
                  {
                     "name": "module-storage-container",
-                    "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-container",
+                    "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-container",
                     "document_url": ""
                  }
               ]
@@ -368,7 +364,7 @@
            "module": [
               {
                  "name": "module-private-endpoints",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/network/tf_modules/module-private-endpoints",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/network/tf_modules/module-private-endpoints",
                  "document_url": ""
               }
            ]
@@ -377,7 +373,7 @@
            "module": [
               {
                  "name": "module-keyvault-keysecret",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/security/tf_modules/module-keyvault-keysecret",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/security/tf_modules/module-keyvault-keysecret",
                  "document_url": ""
               }
            ]
@@ -388,7 +384,7 @@
            "module": [
               {
                  "name": "module-storage-container",
-                 "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-container",
+                 "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/storage/tf_modules/module-storage-container",
                  "document_url": ""
               }
            ]
@@ -409,12 +405,12 @@
         "module": [
            {
               "name": "module-function-app-linux",
-              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/computing/tf_modules/module-function-app-linux",
+              "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/computing/tf_modules/module-function-app-linux",
               "document_url": ""
            },
            {
               "name": "module-function-app-windows",
-              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/computing/tf_modules/module-function-app-windows",
+              "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/computing/tf_modules/module-function-app-windows",
               "document_url": ""
            }
         ]
@@ -423,7 +419,7 @@
         "module": [
            {
               "name": "module-automation-account",
-              "git_url": "https://gitlab.com/USBCLOUDPLATFORM/azure/computing/tf_modules/module-automation-account",
+              "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/computing/tf_modules/module-automation-account",
               "document_url": ""
            }
         ]

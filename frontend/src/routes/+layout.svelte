@@ -4,15 +4,14 @@
 	import '../app.postcss';
 	import { AppShell, AppBar, AppRail, AppRailTile, Modal, modalStore } from '@skeletonlabs/skeleton';
 	import type { ModalSettings, ModalComponent } from '@skeletonlabs/skeleton';
-	import ModalExampleForm from '$lib/Modal/ModalExampleForm.svelte';
+	import GitlabModalForm from '$lib/Modal/GitLabModal.svelte';
 	import Navigation from '$lib/Navigation/Navigation.svelte';
 	import { IconManualGearbox, IconApiApp, IconSettings, IconBrandGitlab, IconApple, } from '@tabler/icons-svelte';
 	import data from "./data.json"
-	import { goto } from '$app/navigation';
+	import {LaunchChrome} from '../../wailsjs/go/main/App.js';
 
-	function handleClick() {
-		const text = 'Hello Kitty';
-		goto(`/contact?text=${encodeURIComponent(text)}`);
+	function lnchUrl(url: string): void {
+		LaunchChrome(url.toString())
 	}
 	
 	let json = {};
@@ -26,7 +25,7 @@
 	}
 
 	function ModalGitLabForm(): void{
-		const c: ModalComponent = {ref: ModalExampleForm};
+		const c: ModalComponent = {ref: GitlabModalForm};
 		const d: ModalSettings = {
 			type: 'component',
 			title: 'Gitlab Token',
@@ -43,6 +42,21 @@
 		};
 		modalStore.trigger(d);
 	}
+
+	const navs = [
+		{
+			title: "Drudge",
+			url: "https://drudgereport.com"
+		},
+		{
+			title: "YouTube",
+			url: "https://youtube.com"
+		},
+		{
+			title: "LevelUp",
+			url: "https://levelup.video"
+		}
+	]
 </script>
 
 <!-- App Shell -->
@@ -51,12 +65,14 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl">Shield Explorer</strong>
+				<a href="/" class="flex-shrink-0 text-xl font-bold">
+					Shield Explorer
+				  </a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a class="btn btn-sm variant-ghost-surface" href="/about">About</a>
-				<a class="btn btn-sm variant-ghost-surface" href="/contact">contact</a>
-				<a class="btn btn-sm variant-ghost-surface" href="/blog">Blog</a>
+				{#each navs as {title, url}}
+					<button class="btn btn-sm variant-ghost-surface" on:click={() => lnchUrl(url)}>{title}</button>
+				{/each}
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
@@ -110,8 +126,6 @@
 			<button on:click={ ModalGitLabForm } class="px-4">
 				<IconManualGearbox class="hover:bg-primary-hover-token" size={36} stroke={1} color=#ccc />
 			</button>
-			<button on:click={() => window.open('https://www.drudgereport.com', '_blank')} class="btn-icon">Drudge</button>
-			<a href="/" class="btn-icon unstyled hover:bg-primary-hover-token" >A</a>
 		</div>
 	</svelte:fragment>
 
