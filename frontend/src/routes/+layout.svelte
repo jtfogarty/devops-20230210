@@ -14,10 +14,11 @@
 		LaunchChrome(url.toString())
 	}
 	
+
 	let json = {};
 	json = data
-	function clickHandler(e) {
-		console.log("clickHandler", e);
+	function clickHandler(e: any) {
+		console.log("hello", e);
 	}
 
 	function triggerAlert(): void {
@@ -112,7 +113,7 @@
 				</AppRail>
 			</div> 
 			<div style="background-color: #1B2636" class="pt-10 px-4">
-				<Navigation tree={json} onClick={clickHandler}/>
+				<Navigation tree={json} />
 			</div>
 		</div>
 	</svelte:fragment>
