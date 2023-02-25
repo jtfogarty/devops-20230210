@@ -1,5 +1,6 @@
 {
   "$schema": "https://wails.io/schemas/config.v2.json",
+  "wailsjsdir": "./frontend/src/lib",
   "name": "devops-20230210",
   "outputfilename": "devops-20230210",
   "frontend:install": "npm install",
@@ -7,7 +8,7 @@
   "frontend:dev:watcher": "npm run dev",
   "frontend:dev:serverUrl": "auto",
   "author": {
-    "name": "",
-    "email": ""
-  }
+    "name": "Jeff Fogarty",
+    "email": "jeff@fogarty.org"
+  } 
 }

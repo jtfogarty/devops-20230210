@@ -18,8 +18,9 @@ Run `wails build` to create a distribution
 
 ## ToDo's
 
-<input type="checkbox"> Create a form or modal to allow user to add gitlab secret. This data should be stored in a svelte:store <p/>
-<input type="checkbox"> Use gitlab secret to connect to gitlab.com and read a readme onto main area.<p/>
-<input type="checkbox"> When user clicks on a module, display code in main area code block.
-
-<input type="checkbox" checked> some checked text  
+<input type="checkbox" checked> Create a form or modal to allow user to add gitlab secret. This data should be stored in a svelte:store. <p/>
+<input type="checkbox" > Use gitlab secret to connect to gitlab.com and read a readme onto main area.<p/>
+<input type="checkbox" > Figure out how to create tabs so when a user clicks on a module one tab is displayed for each element in an array. <p/>
+<input type="checkbox"> When user clicks on a module, display code in main area code block.<p/>
+<input type="checkbox"> Figure out why the build program does not work.
+  
