@@ -10,7 +10,10 @@
 	}
 	
 	if (node === 'mod') {
+		console.log(value)
+		console.log((value as {name: string}[])[0].name);
 		console.log((value as {git_url: string}[])[0].git_url);
+		console.log((value as {document_url: string}[])[0].document_url);
     }
   }
 </script>
@@ -55,4 +58,8 @@
   span {
     cursor: pointer;
   }
+/*   li:not(.hidden):hover {
+	background: #007ba7
+} */
+
 </style>
