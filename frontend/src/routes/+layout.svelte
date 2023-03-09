@@ -9,12 +9,25 @@
 	import { IconManualGearbox, IconApiApp, IconSettings, IconBrandGitlab, IconApple, } from '@tabler/icons-svelte';
 	import data from "./data.json"
 	import {LaunchChrome} from '../../wailsjs/go/main/App.js';
+	import { onMount } from "svelte";
+
+	onMount(() => {
+			window.addEventListener("NavClick", handleNavClick);
+			
+			return () => {
+				window.removeEventListener("NavClick", handleNavClick);
+			};
+		});
+
 
 	function lnchUrl(url: string): void {
 		LaunchChrome(url.toString())
 	}
 	
-
+	function handleNavClick(event: CustomEvent<string>) {
+		const data = event.detail;
+    console.log("Parent Clicked:", data);
+	}
 	let json = {};
 	json = data
 	function clickHandler(e: any) {
@@ -113,7 +126,7 @@
 				</AppRail>
 			</div> 
 			<div style="background-color: #1B2636" class="pt-10 px-4">
-				<Navigation tree={json} />
+				<Navigation on:NavClick={ handleNavClick } tree={json}  />
 			</div>
 		</div>
 	</svelte:fragment>

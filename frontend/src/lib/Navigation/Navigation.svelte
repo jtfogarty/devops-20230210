@@ -1,19 +1,26 @@
 <script lang='ts'>
+	import { createEventDispatcher } from 'svelte';
 	import { IconHexagons } from '@tabler/icons-svelte';
   	export let tree = {};
   	export let level = 0;
 
+	const dispatch = createEventDispatcher();
+
 	function toggle(event: (MouseEvent & { currentTarget: EventTarget & HTMLSpanElement; }) |
 	 undefined, node: string | undefined, value: unknown) {
+	
 	if( node != 'mod' ){
 	    (event!.target as Element).parentNode!.querySelector('ul')!.classList.toggle("hidden");
 	}
 	
 	if (node === 'mod') {
-		console.log(value)
-		console.log((value as {name: string}[])[0].name);
-		console.log((value as {git_url: string}[])[0].git_url);
-		console.log((value as {document_url: string}[])[0].document_url);
+		let data = (value as {document_url: string}[])[0].document_url;
+		console.log("child clicked" , data);
+		dispatch("NavClick", data);
+		//console.log(value)
+		//console.log((value as {name: string}[])[0].name);
+		//console.log((value as {git_url: string}[])[0].git_url);
+		//console.log((value as {document_url: string}[])[0].document_url);
     }
   }
 </script>

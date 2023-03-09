@@ -4,7 +4,7 @@
         {
            "name": "usb-azure-foundation",
            "git_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/live/usb-azure-foundation",
-           "document_url": "https://<SERVER_TOKEN>/USBCLOUDPLATFORM/azure/live/usb-azure-foundation/README.md"
+           "document_url": "https://gitlab.com/mygroup8950810/subgroup/repo01/README.md"
         }
      ],
      "module": [
